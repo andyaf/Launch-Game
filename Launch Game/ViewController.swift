@@ -32,12 +32,17 @@ class ViewController: UIViewController {
 
     
     @IBAction func startTimer (_ sender: AnyObject) {
-    var timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
+    
+    Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
         Reset.isHidden = false
         StartButton.isHidden = true
     }
     
-    @IBAction func resetButton (timer: Timer) {
+    
+    
+    
+    @IBAction func resetButton (_ sender: AnyObject) {
+        
         Reset.isHidden = true
         StartButton.isHidden = false
         count = 200
@@ -58,5 +63,7 @@ class ViewController: UIViewController {
             count -= 1
         }
     }
+    
+   
 }
 
