@@ -15,9 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var Reset: UIButton!
     @IBOutlet var StartButton: UIButton!
    
-    
 
-    var count = 120
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,37 +31,16 @@ class ViewController: UIViewController {
     
     @IBAction func startTimer (_ sender: AnyObject) {
     
-    Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
-        Reset.isHidden = false
-        StartButton.isHidden = true
-    }
-    
+       }
     
     
     
     @IBAction func resetButton (_ sender: AnyObject) {
         
-        Reset.isHidden = true
-        StartButton.isHidden = false
-        count = 200
-        timer.invalidate()
-    }
-    
-    //Problem: Your are firing update Twice
-    
-    func update()  {
-        if (count > 0) {
-            let minutes = String(count / 60)
-            let seconds = String(count % 60)
-            if (seconds == "0") {
-            CountDown.text = minutes + ":" + seconds + "0"
-            } else {
-            CountDown.text = minutes + ":" + seconds
-            }
-            count -= 1
-        }
-    }
+        
     
    
+    }
+
 }
 
