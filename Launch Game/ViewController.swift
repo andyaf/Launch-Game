@@ -15,12 +15,14 @@ class ViewController: UIViewController {
     @IBOutlet var Reset: UIButton!
     @IBOutlet var StartButton: UIButton!
    
-
+    var timer = Timer()
+    var binaryCount = 200
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       //randon()
+       
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,17 +32,33 @@ class ViewController: UIViewController {
 
     
     @IBAction func startTimer (_ sender: AnyObject) {
-    
+         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: "countDown", userInfo: nil, repeats: true)
+         Reset.isHidden = false
+        StartButton.isHidden = true
        }
     
     
     
     @IBAction func resetButton (_ sender: AnyObject) {
-        
-        
-    
-   
+        timer.invalidate()
+        StartButton.isHidden = false
+        Reset.isHidden = true
+        binaryCount = 200
+        updateText()
     }
 
+    
+    func countDown () {
+        if binaryCount > 0 {
+            binaryCount -= 1
+           updateText()
+        } else {
+            updateText()
+        }
+    }
+    
+    func updateText () {
+         CountDown.text = String(binaryCount)
+    }
 }
 
