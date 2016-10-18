@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4990A4EC1DB5AB1A006919E3 /* Missle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4990A4EB1DB5AB1A006919E3 /* Missle.swift */; };
 		49C4A0BC1DA4890000D87024 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4A0BB1DA4890000D87024 /* AppDelegate.swift */; };
 		49C4A0BE1DA4890000D87024 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C4A0BD1DA4890000D87024 /* ViewController.swift */; };
 		49C4A0C11DA4890000D87024 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C4A0BF1DA4890000D87024 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4990A4EB1DB5AB1A006919E3 /* Missle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Missle.swift; sourceTree = "<group>"; };
 		49C4A0B81DA4890000D87024 /* Launch Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Launch Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C4A0BB1DA4890000D87024 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49C4A0BD1DA4890000D87024 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		49C4A0BA1DA4890000D87024 /* Launch Game */ = {
 			isa = PBXGroup;
 			children = (
+				4990A4EB1DB5AB1A006919E3 /* Missle.swift */,
 				49C4A0BB1DA4890000D87024 /* AppDelegate.swift */,
 				49C4A0BD1DA4890000D87024 /* ViewController.swift */,
 				49C4A0BF1DA4890000D87024 /* Main.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C4A0BE1DA4890000D87024 /* ViewController.swift in Sources */,
+				4990A4EC1DB5AB1A006919E3 /* Missle.swift in Sources */,
 				49C4A0BC1DA4890000D87024 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +510,7 @@
 				49C4A0E21DA4890000D87024 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49C4A0E31DA4890000D87024 /* Build configuration list for PBXNativeTarget "Launch GameTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +519,7 @@
 				49C4A0E51DA4890000D87024 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49C4A0E61DA4890000D87024 /* Build configuration list for PBXNativeTarget "Launch GameUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +528,7 @@
 				49C4A0E81DA4890000D87024 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

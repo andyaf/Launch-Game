@@ -14,14 +14,21 @@ class ViewController: UIViewController {
     @IBOutlet var CountDown: UILabel!
     @IBOutlet var Reset: UIButton!
     @IBOutlet var StartButton: UIButton!
-   
+    @IBOutlet weak var MissleType: UILabel!
+    @IBOutlet weak var Arm: UIButton!
+    
+    
+ 
     var timer = Timer()
     var binaryCount = 200
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+       Reset.isHidden = true
+       Arm.isHidden = true
+    
+        
        
     }
 
@@ -30,12 +37,28 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func Arm(_ sender: AnyObject) {
+    }
+    
+    @IBAction func Lock(_ sender: AnyObject) {
+    }
+    
+    @IBAction func Fire(_ sender: AnyObject) {
+    }
+
+    
     
     @IBAction func startTimer (_ sender: AnyObject) {
+        updateText()
          timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: "countDown", userInfo: nil, repeats: true)
          Reset.isHidden = false
         StartButton.isHidden = true
+        var missleDisplay = Misssle(missleCall: "Nuclear Missle Detected")
+        MissleType.text = missleDisplay.missleCall
+        Arm.isHidden = false
        }
+    
+  
     
     
     
@@ -58,7 +81,14 @@ class ViewController: UIViewController {
     }
     
     func updateText () {
-         CountDown.text = String(binaryCount)
+        var minutes = binaryCount / 60
+        var seconds = binaryCount % 60
+        if (seconds <= 9){
+        CountDown.text = String(minutes) + ":" + String(0) + String(seconds)
+        } else {
+        CountDown.text = String(minutes) + ":" + String(seconds)
+
+            }
     }
 }
 
