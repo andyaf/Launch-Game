@@ -18,19 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l2p-v1-9Pv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="l2p-v1-9Pv">
                                 <frame key="frameInset" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MnZ-OZ-ns1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Launch-Game" translatesAutoresizingMaskIntoConstraints="NO" id="MnZ-OZ-ns1">
                                 <frame key="frameInset" minX="16" minY="20" width="343" height="192"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAL-em-NNh">
-                                <frame key="frameInset" minX="105" minY="420" width="167" height="40"/>
+                                <frame key="frameInset" minX="105" minY="407" width="167" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Arm"/>
+                                <state key="normal" title="Arm">
+                                    <color key="titleColor" red="0.72619432984915733" green="0.75250853874546464" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="Arm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eyF-cW-ndD"/>
                                 </connections>
@@ -38,7 +40,9 @@
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrS-Zp-NG5">
                                 <frame key="frameInset" minX="40" minY="588" width="296" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Fire"/>
+                                <state key="normal" title="Fire">
+                                    <color key="titleColor" red="0.85909164507772018" green="0.20721072834736223" blue="0.18250274728017657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="Fire:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zft-80-YOK"/>
                                 </connections>
@@ -48,7 +52,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqo-4f-HDU">
-                                <frame key="frameInset" minX="149" minY="258" width="78" height="21"/>
+                                <frame key="frameInset" minX="149" minY="163" width="78" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -64,7 +68,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdf-Wj-Mr5">
-                                <frame key="frameInset" minX="53" minY="248" width="268" height="21"/>
+                                <frame key="frameInset" minX="53" minY="212" width="268" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -73,7 +77,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F50-Ga-kvX">
                                 <frame key="frameInset" minX="143" minY="361" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Push to Start"/>
+                                <state key="normal" title="Push to Start">
+                                    <color key="titleColor" red="0.72619432984915733" green="0.75250853874546464" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nVr-PC-HdD"/>
                                 </connections>
@@ -81,10 +87,27 @@
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jk5-qB-8RI">
                                 <frame key="frameInset" minX="105" minY="464" width="167" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Lock"/>
+                                <state key="normal" title="Lock">
+                                    <color key="titleColor" red="0.72619432984915733" green="0.75250853874546464" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="Lock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kou-J8-esY"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbk-Yy-xWC">
+                                <frame key="frameInset" minX="40" minY="257" width="76" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Nuclear"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6X-sH-l96">
+                                <frame key="frameInset" minX="149" minY="257" width="76" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="missle"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHn-4z-cHM">
+                                <frame key="frameInset" minX="259" minY="257" width="76" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="small missle"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -92,31 +115,25 @@
                     <connections>
                         <outlet property="Arm" destination="PAL-em-NNh" id="Rzk-3Y-b9l"/>
                         <outlet property="CountDown" destination="Fqo-4f-HDU" id="5YS-8S-L63"/>
+                        <outlet property="Fire" destination="GrS-Zp-NG5" id="46g-Ag-Ih3"/>
+                        <outlet property="Lock" destination="jk5-qB-8RI" id="4Xo-N9-WfF"/>
                         <outlet property="MissleType" destination="Qdf-Wj-Mr5" id="aQN-P8-HCq"/>
                         <outlet property="Reset" destination="wo8-xQ-lhK" id="N4x-Z5-srH"/>
                         <outlet property="StartButton" destination="F50-Ga-kvX" id="JaJ-Z7-qNB"/>
+                        <outlet property="fire" destination="GrS-Zp-NG5" id="z1n-Vn-PaI"/>
+                        <outlet property="lock" destination="jk5-qB-8RI" id="xbk-7L-DgS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="iw3-1U-KrX">
-            <objects>
-                <viewController id="ho9-Im-szw" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SJs-ff-aEK"/>
-                        <viewControllerLayoutGuide type="bottom" id="e7i-wk-DHC"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zcj-Uj-fQy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WeP-iK-9OZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="879" y="137"/>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="284" height="177"/>
+        <image name="Launch-Game" width="647" height="72"/>
+        <image name="Nuclear" width="600" height="600"/>
+        <image name="missle" width="512" height="512"/>
+        <image name="small missle" width="1600" height="1600"/>
+    </resources>
 </document>

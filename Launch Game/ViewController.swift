@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet var StartButton: UIButton!
     @IBOutlet weak var MissleType: UILabel!
     @IBOutlet weak var Arm: UIButton!
+    @IBOutlet weak var Lock: UIButton!
+    @IBOutlet weak var Fire: UIButton!
     
     
  
@@ -27,6 +29,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
        Reset.isHidden = true
        Arm.isHidden = true
+        Lock.isHidden = true
+        Fire.isHidden = true
     
         
        
@@ -38,12 +42,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func Arm(_ sender: AnyObject) {
+    Lock.isHidden = false
+    Arm.isHidden = true
     }
     
     @IBAction func Lock(_ sender: AnyObject) {
+        Lock.isHidden = true
+        Fire.isHidden = false
+        
     }
     
     @IBAction func Fire(_ sender: AnyObject) {
+        
+        
     }
 
     
@@ -59,7 +70,6 @@ class ViewController: UIViewController {
        }
     
   
-    
     
     
     @IBAction func resetButton (_ sender: AnyObject) {
